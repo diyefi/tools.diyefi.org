@@ -1,6 +1,12 @@
 <html><body>
-	<center><h1>tools.diyefi.org</h1></center>
-	<center><img src="apache_pb.gif" alt="Powered By Apache!"/></center>
-	<center><h1>Coming Soon!!</h1></center>
+	<h1>FreeEMS Tools</h1>
+	<p>This page exists to share information on how to obtain various tools for DIY EFI projects. In particular, it exists to share the tools required to build FreeeEMS  with the world.</p>
+	<ul>
+		<li>For Debian and Ubuntu there is a repository available. Add the following to your sources.list file (found in /etc/apt/) <b>deb debs.diyefi.org css-debs binary</b> then run <b>apt-get update</b> then run <b>apt-get install binutils-mc9xgate binutils-mc9s12x gcc-m68hc1x newlib-m68hc1x</b>. Alternatively you may download the debian archives from the following location and install them manually with <b>dpkg -i *.deb</b> : <a href="http://debs.diyefi.org/dists/css-debs/binary/binary-i386/">Debian Archives</a></li>
+		<li>For Windows (XP/Vista/7) you can get the installer from right here: <a href="FreeEMS-ToolChain-0.1.0.exe">FreeEMS-ToolChain-0.1.0.exe</a></li>
+		<li>For Mac OSX, take all of the files from the following zip archive: <a href="FreeEMS-ToolChain-MacOSX-Fink.zip">FreeEMS-ToolChain-MacOSX-Fink.zip</a> and place them in this directory: <b>/sw/fink/dists/local/main/finkinfo/</b> then run <b>fink install ...similar to debian...</b></li>
+		<li>Additionally, you can get the source from Sean Keys master branch (or any fork thereof) on github: <a href="http://github.com/seank/FreeScale-s12x-binutils">XGATE Binutils</a></li>
+		<li>Arch - johntramp? Let me know!</li>
+	</ul>
 </body></html>
 
