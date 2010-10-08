@@ -1,9 +1,9 @@
 <html>
 <head>
-	<title>FreeEMS Tools</title>
+	<title>DIYEFI.org - FreeEMS Tools</title>
 </head>
 <body>
-	<h1>FreeEMS Tools</h1>
+	<h1>FreeEMS/S12X/XGATE Tools</h1>
 	<p>This page exists to share information on how to obtain various tools for DIY EFI projects. In particular, it exists to share, with the world, the tools required to build FreeEMS.</p>
 	<p>Previously, there was no free software compiler available for the XGATE coprocessor in the S12XDP512 CPU. Sean Keys has developed a full set of binutils for this core over the last year including an assembler. No C compiler is available, however it is unlikely to be required either. The tools presented here included the new XGATE tools and other older tools rebuilt to work smoothly with that.</p>
 	<h3>Debian and Ubuntu</h3>
@@ -36,12 +36,20 @@
 	<b>fink install make</b></br></br>
 	Unfortunately there is not currently a macports toolchain available.</br></br>
 	Thanks to Steve Ball for creating these info and patch files.</p>
-	<h3>Source Code</h3>
-	<p>Additionally, you can get the source code from Sean Keys master branch (or any fork thereof) on github</br></br>
+	<h3>Source Code - Tools</h3>
+	<p>Additionally, you can get the source code for the tools from Sean Keys master branch (or any fork thereof) on github</br></br>
 	<a href="http://github.com/seank/FreeScale-s12x-binutils">XGATE Binutils</a></br></br>
 	The above Mac and Windows tools were built from the code from the following revision</br></br>
 	<a href="http://github.com/fredcooke/FreeScale-s12x-binutils/commit/fd2a9061f34289f9bebffaabe774a6085ce57b85">fd2a9061f34289f9bebffaabe774a6085ce57b85</a></br></br>
 	As far as I know, the debian packages above came from the same source, just without the mac and windows script additions.</p>
+	<h3>Source Code - FreeEMS</h3>
+	<p>If you don't already have the FreeEMS source code, you can get it from Fred Cooke's master branch (or any fork thereof) on github</br></br>
+	<a href="http://github.com/fredcooke/freeems-vanilla/">Fred Cooke's FreeEMS Repository</a></br></br>
+	You can git clone it directly (for following Fred's progress), fork it on github and clone your own (for hacking and/or contributing), or even just download a release or a snapshot of the current head of development (to take a look or have a play).</p>
+	<h3>Other Linux Distributions</h3>
+	<p>If you use another type of GNU/Linux distro and would like to contribute packages or package definitions or howtos on building from source on your platform, please get in touch.</p>
+	<h3>MegaSquirt</h3>
+	<p>Yes, these tools can be used to build most MegaSquirt (S12(X)) based firmware variants, and that will soon include MS3, but not quite yet.</p>
 	<h3>Developed with VIM</h3>
 	<p>This page was developed using vim over ssh on the server, and it shows! If you want to give this page a bit of a spruce up, go right ahead! You can find me on the diyefi forum to deliver your contribution. Just adding a CSS style sheet would probably be sufficient.</p>
 </body>
