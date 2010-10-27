@@ -22,12 +22,22 @@
 	you may also need to run<br /><br />
 	<b>apt-get install make bc</b><br /><br />
 	if you do not already have make and bc installed.<br /><br />
+	The current deb build that Fred is using to build his master copy of the FreeEMS code is:<br />
+	<ul>
+	<li>freeems-toolchain - 0.0.7 - which brings in the following</li>
+	<li>gcc-mc9s12x - 1:3.3.6+3.1+dfsg-3+5</li>
+	<li>binutils-mc9s12x - 1:2.20-0+5</li>
+	<li>binutils-mc9xgate - 1:2.20-0+5</li>
+	<li>newlib-mc9s12x - 1.18.0-6+5</li>
+	<li>which were all built from the binutils commit hash ee7a227de93220d005b1a2cda813dd564ebb11b8 which includes most of the extended S12X and S12 instructions in the binutils-mc9s12x package.</li>
+	</ul>
 	Thanks, again, to Sean Keys for preparing this repository.</p>
 	<h3>Windows XP, Vista and 7</h3>
 	<p>For Windows there is an installer available which includes XGATE binutils, S12X GCC, S12X binutils, S12X newlib, GnuWin32 make and GnuWin32 coreutils. A link to the installer is below. When installing you should check the "adjust path" checkbox.<br /><br />
 	<a href="FreeEMS-ToolChain-0.1.0.exe">FreeEMS-ToolChain-0.1.0.exe</a><br /><br />
 	The scripts used to build the this installer are available on github at the link below.<br /><br />
 	<a href="http://github.com/djandruczyk/FreeEMS-win32-toolchain-builder">FreeEMS Windows Installer Build Scripts</a><br /><br />
+	This current version does not include the extended S12X and S12 instructions in the mc9s12x binutils package. Hopefully we can update this pretty soon.<br /><br />
 	Thanks to Dave Djandruczyk for creating this installer!</p>
 	<h3>Mac OS X</h3>
 	<p>For Mac OSX you will require fink installed and setup with unstable enabled. Once you have that, you can take all of the files from the following zip archive<br /><br />
@@ -39,6 +49,7 @@
 	You will also need to install make in the same fashion if you have not done so already.<br /><br />
 	<b>fink install make</b><br /><br />
 	Unfortunately there is not currently a macports toolchain available.<br /><br />
+	This current version does not include the extended S12X and S12 instructions in the mc9s12x binutils package. Hopefully we can update this pretty soon.<br /><br />
 	Thanks to Steve Ball for creating these info and patch files.</p>
 	<h3>Source Code - Tools</h3>
 	<p>Additionally, you can get the source code for the tools from Sean Keys master branch (or any fork thereof) on github<br /><br />
